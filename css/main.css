@@ -1,0 +1,250 @@
+/********************************************************************************
+  This was compiled from styles.less using LESS CSS - Lesscss.org
+  **You will never want to directly edit the generated main.css file!**
+
+  @Section: Applies to all page sections
+  **Search for @ symbol or @Section: to search by category
+
+  Color Reference:
+      white: #FFFFFF
+      black: #000000
+ light gray: #f0edec
+       gray: #5f5555
+  dark gray: #2f2a2a
+
+  Font-Family Reference:
+      helvetica
+      futura pt
+  
+
+********************************************************************************/
+/*************************************************************
+
+  @Search: Mixins & Vars (Should be empty in generated code)
+
+*************************************************************/
+/*** COLOR VARS ***/
+/************************************
+
+  @Search: Global
+
+************************************/
+body {
+  background: #ffffff;
+  color: #5f5555;
+  font-family: helvetica, arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+  color: #2f2a2a;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+}
+a:active,
+a a:visited {
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+  height: 1px;
+  line-height: 1px;
+}
+/*******************************************
+
+  @Section: Type
+
+*******************************************/
+b {
+  font-weight: 700;
+}
+em {
+  font-style: oblique;
+}
+sup {
+  font-size: 60%;
+  vertical-align: top;
+}
+/*******************************************
+
+  @Section: Forms
+
+*******************************************/
+/*******************************************
+
+  @Section: Header
+
+*******************************************/
+.header {
+  width: 1048px;
+  margin: auto;
+  position: relative;
+  padding: 60px 0 0;
+}
+.header a.logo {
+  background: url(../img/logo.png) no-repeat;
+  text-indent: -9999px;
+  display: block;
+  width: 177px;
+  height: 75px;
+  margin: 0 0 20px;
+}
+/*******************************************
+
+  @Section: Navigation
+
+*******************************************/
+.nav {
+  float: right;
+  margin-bottom: 30px;
+}
+.nav li {
+  float: left;
+  margin-left: 40px;
+}
+.nav li:first-child {
+  margin-left: 0;
+}
+.nav li a {
+  background: url(../img/sprite-navbar.png) no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 10px;
+}
+.nav li.nav-1 a {
+  background-position: 0 0;
+  width: 79px;
+}
+.nav li.nav-1 a:hover {
+  background-position: 0 -14px;
+}
+.nav li.nav-2 a {
+  background-position: -117px 0;
+  width: 75px;
+}
+.nav li.nav-2 a:hover {
+  background-position: -117px -14px;
+}
+.nav li.nav-3 a {
+  background-position: -231px 0;
+  width: 47px;
+}
+.nav li.nav-3 a:hover {
+  background-position: -231px -14px;
+}
+.nav li.nav-4 a {
+  background-position: -315px 0;
+  width: 58px;
+}
+.nav li.nav-4 a:hover {
+  background-position: -315px -14px;
+}
+.nav li.nav-5 a {
+  background-position: -411px 0;
+  width: 53px;
+}
+.nav li.nav-5 a:hover {
+  background-position: -411px -14px;
+}
+.nav li.nav-6 a {
+  background-position: -503px 0;
+  width: 74px;
+}
+.nav li.nav-6 a:hover {
+  background-position: -503px -14px;
+}
+/*******************************************
+
+  @Section: Footer
+
+*******************************************/
+.footer {
+  background: #f0edec;
+  padding: 25px 0;
+  font-size: 12px;
+}
+.footer .footer-content {
+  width: 1048px;
+  margin: auto;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer .footer-content p {
+  float: right;
+}
+.footer .footer-nav li {
+  float: left;
+}
+.footer .footer-nav li a {
+  display: inline-block;
+}
+/*******************************************
+
+  @Section: Main Image Carousel
+
+*******************************************/
+.carousel {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .btn-scrollLeft {
+  background: url(../img/btn-scrollLeft.jpg) no-repeat 0 0;
+  display: block;
+  width: 70px;
+  height: 64px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 480px;
+  left: 86px;
+}
+.carousel .btn-scrollRight {
+  background: url(../img/btn-scrollRight.jpg) no-repeat 0 0;
+  display: block;
+  width: 70px;
+  height: 64px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 480px;
+  left: 966px;
+}
+.carousel ul li img {
+  display: block;
+}
+.carousel ul li .carousel-deets {
+  background: #2f2a2a;
+  position: relative;
+  color: #afa8a6;
+  width: 780px;
+  margin: 0 auto;
+  padding: 17px 15px;
+  text-align: center;
+}
+.carousel ul li .carousel-deets p {
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.carousel ul li .carousel-deets a {
+  color: #00bdff;
+  font-size: 11px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+/*******************************************
+
+  @Section: Home Page Content
+
+*******************************************/
+.content {
+  width: 1048px;
+  margin: 0 auto 150px;
+  position: relative;
+}
