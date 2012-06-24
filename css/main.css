@@ -189,13 +189,14 @@ sup {
   @Section: Main Image Carousel
 
 *******************************************/
-.carousel {
-  width: 100%;
-  margin: auto;
+.image-carousel {
+  width: 1200px;
+  height: 544px;
+  margin: 0 auto 80px;
   overflow: hidden;
   position: relative;
 }
-.carousel .btn-scrollLeft {
+.image-carousel .btn-carousel-prev {
   background: url(../img/btn-scrollLeft.jpg) no-repeat 0 0;
   display: block;
   width: 70px;
@@ -203,9 +204,10 @@ sup {
   text-indent: -9999px;
   position: absolute;
   top: 480px;
-  left: 86px;
+  left: 125px;
+  cursor: pointer;
 }
-.carousel .btn-scrollRight {
+.image-carousel .btn-carousel-next {
   background: url(../img/btn-scrollRight.jpg) no-repeat 0 0;
   display: block;
   width: 70px;
@@ -213,12 +215,17 @@ sup {
   text-indent: -9999px;
   position: absolute;
   top: 480px;
-  left: 966px;
+  left: 1005px;
+  cursor: pointer;
 }
-.carousel ul li img {
+.image-carousel ul li {
+  display: inline-block;
+  position: relative;
+}
+.image-carousel ul li img {
   display: block;
 }
-.carousel ul li .carousel-deets {
+.image-carousel ul li .carousel-deets {
   background: #2f2a2a;
   position: relative;
   color: #afa8a6;
@@ -227,12 +234,12 @@ sup {
   padding: 17px 15px;
   text-align: center;
 }
-.carousel ul li .carousel-deets p {
+.image-carousel ul li .carousel-deets p {
   font-size: 14px;
   font-weight: 100;
   text-transform: uppercase;
 }
-.carousel ul li .carousel-deets a {
+.image-carousel ul li .carousel-deets a {
   color: #00bdff;
   font-size: 11px;
   text-decoration: underline;
@@ -247,4 +254,64 @@ sup {
   width: 1048px;
   margin: 0 auto 150px;
   position: relative;
+}
+.content .row-2 {
+  height: 450px;
+  position: relative;
+  margin: auto;
+}
+.content .row-2 ul {
+  height: 108px;
+}
+.content .row-2 ul li {
+  float: left;
+  margin-left: 29px;
+  text-align: center;
+  border-bottom: 5px solid #dddad9;
+}
+.content .row-2 ul li:first-child {
+  margin-left: 0;
+}
+.content .row-2 ul li.current-tab {
+  border-bottom: 8px solid #f0edec;
+}
+.content .row-2 ul li a {
+  width: 240px;
+  height: 35px;
+  padding-top: 60px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.content .row-2 ul li#tab-1 a {
+  background: url(../img/icon-reputation.png) no-repeat center 0;
+}
+.content .row-2 ul li#tab-2 a {
+  background: url(../img/icon-dedication.png) no-repeat center 0;
+}
+.content .row-2 ul li#tab-3 a {
+  background: url(../img/icon-unsurpassedQuality.png) no-repeat center 0;
+}
+.content .row-2 ul li#tab-4 a {
+  background: url(../img/icon-professionalism.png) no-repeat center 0;
+}
+.content .row-2 .tab-content {
+  background: #f0edec;
+  padding: 70px;
+  width: 908px;
+  margin: auto;
+  position: absolute;
+  top: 103px;
+  left: 0;
+}
+.content .row-2 .tab-content p {
+  text-transform: uppercase;
+  line-height: 1.75;
+}
+.content .row-2 .tab-content.tab-2-content,
+.content .row-2 .tab-content.tab-3-content,
+.content .row-2 .tab-content.tab-4-content {
+  display: none;
 }

@@ -208,12 +208,13 @@ form {
 
 *******************************************/
 
-.carousel {
-  width: 100%;
-  margin: auto;
+.image-carousel {
+  width: 1200px;
+  height: 544px;
+  margin: 0 auto 80px;
   overflow: hidden;
   position: relative;
-  .btn-scrollLeft {
+  .btn-carousel-prev {
     background: url(../img/btn-scrollLeft.jpg) no-repeat 0 0;
     display: block;
     width: 70px;
@@ -221,9 +222,10 @@ form {
     text-indent: -9999px;
     position: absolute;
     top: 480px;
-    left: 86px;
+    left: 125px;
+    cursor: pointer;
   }
-  .btn-scrollRight {
+  .btn-carousel-next {
     background: url(../img/btn-scrollRight.jpg) no-repeat 0 0;
     display: block;
     width: 70px;
@@ -231,10 +233,14 @@ form {
     text-indent: -9999px;
     position: absolute;
     top: 480px;
-    left: 966px;
+    left: 1005px;
+    cursor: pointer;
   }
   ul {
+
     li {
+      display: inline-block;
+      position: relative;
       img {
         display: block;
       }
@@ -271,5 +277,77 @@ form {
   width: 1048px;
   margin: 0 auto 150px;
   position: relative;
+  .row-2 {
+    height: 450px;
+    position: relative;
+    margin: auto;
+    ul {
+      height: 108px;
+      li {
+        float: left;
+        margin-left: 29px;
+        text-align: center;
+        border-bottom: 5px solid #dddad9;
+        &:first-child {
+          margin-left: 0;
+        }
+        &.current-tab {
+          border-bottom: 8px solid @ltGray;
+        }
+        a {
+          width: 240px;
+          height: 35px;
+          padding-top: 60px;
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        &#tab-1 {
+          a{
+            background: url(../img/icon-reputation.png) no-repeat center 0;
+          }
+        }
+        &#tab-2 {
+          a {
+            background: url(../img/icon-dedication.png) no-repeat center 0;
+          }
+        }
+        &#tab-3 {
+          a {
+            background: url(../img/icon-unsurpassedQuality.png) no-repeat center 0;
+          }
+        }
+        &#tab-4 {
+          a {
+            background: url(../img/icon-professionalism.png) no-repeat center 0;
+          }
+        }
+      }
+    }
+    .tab-content {
+      background: @ltGray;
+      padding: 70px;
+      width: 908px;
+      margin: auto;
+      position: absolute;
+      top: 103px;
+      left: 0;
+      p {
+        text-transform: uppercase;
+        line-height: 1.75;
+      }
+      &.tab-2-content,
+      &.tab-3-content,
+      &.tab-4-content {
+        display: none;
+      }
+      &.tab-1-content {}
+      &.tab-2-content {}
+      &.tab-3-content {}
+      &.tab-4-content {}
+    }
+  }
 }
 
