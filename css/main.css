@@ -197,7 +197,7 @@ sup {
   position: relative;
 }
 .image-carousel .btn-carousel-prev {
-  background: url(../img/btn-scrollLeft.jpg) no-repeat 0 0;
+  background: url(../img/btn-carousel-prev.jpg) no-repeat 0 0;
   display: block;
   width: 70px;
   height: 64px;
@@ -208,7 +208,7 @@ sup {
   cursor: pointer;
 }
 .image-carousel .btn-carousel-next {
-  background: url(../img/btn-scrollRight.jpg) no-repeat 0 0;
+  background: url(../img/btn-carousel-next.jpg) no-repeat 0 0;
   display: block;
   width: 70px;
   height: 64px;

@@ -54,7 +54,7 @@ $(function() {
         if(currentItem >= items.length) { 
           currentItem = 0;
         }
-      }, 6000);
+      }, 8000);
 
     };
     var intervalHandle = startInterval();
