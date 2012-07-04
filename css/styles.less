@@ -1,4 +1,4 @@
- /********************************************************************************
+/********************************************************************************
   This was compiled from styles.less using LESS CSS - Lesscss.org
   **You will never want to directly edit the generated main.css file!**
 
@@ -349,5 +349,158 @@ form {
       &.tab-4-content {}
     }
   }
+  .row-3 {
+    h3 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: @black;
+      float: left;
+      margin-bottom: 20px;
+    }
+    .first-column {
+      width: 584px;
+      float: left;
+      .pagination {
+        float: right;
+        margin-bottom: 20px;
+        ul {
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 10px;
+          li {
+            float: left;
+            margin-left: 10px;
+            &:first-child {
+              margin-left: 0;
+            }
+            a {
+              background: url(../img/sprite-bullet-1.png) no-repeat 0 -14px;
+              display: block;
+              width: 10px;
+              height: 10px;
+              text-indent: -9999px;
+              cursor: pointer;
+              &.current {
+                background-position: 0 0;
+              }
+            }
+          }
+        }
+        .btn-viewAllNews {
+          display: inline-block;
+          color: @blue;
+          text-decoration: underline;
+          text-transform: uppercase;
+          font-size: 11px;
+          vertical-align: top;
+        }
+      }
+      .latest-news-container {
+        ul {
+          li {
+            background: url(../img/bg-latestNews.png) no-repeat 0 0;
+            width: 584px;
+            height: 169px;
+            font-size: 12px;
+            line-height: 16px;
+            color: @gray;
+            margin-bottom: 20px;
+            img {
+              display: block;
+              float: left;
+              margin-right: 35px;
+              width: 210px;
+            }
+            h5 {
+              width: 315px;
+              float: left;
+              text-transform: uppercase;
+              font-style: oblique;
+              padding-top: 40px;
+              margin-bottom: 15px;
+            }
+            p {
+              width: 315px;
+              float: left;
+              margin-bottom: 15px;
+            }
+            a.btn-readMore {
+              color: @black;
+              font-weight: 700;
+              line-height: 12px;
+              border-bottom: 2px solid @medGray;
+              float: left;
+            }
+          }
+        }
+      }
+    }
+    .second-column {
+      width: 365px;
+      float: right;
+      h3 {
+        float: none;
+      }
+      ul {
+        li {
+          border-top: 1px solid @ltGray;
+          &.contact-info {
+            padding-top: 30px;
+            margin-bottom: 30px;
+            font-size: 12px;
+            div {
+              p {
+                margin-bottom: 5px;
+              }
+            }
+            .address {
+              float: left;
+              margin-right: 75px;
+            }
+            .digits {
+              float: left;
+            }
+          }
+          &.facebook {
+            padding-top: 20px;
+            margin-bottom: 70px;
+            p {
+              font-size: 11px;
+              line-height: 16px;
+              text-transform: uppercase;
+              img {
+                vertical-align: bottom;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+      .featured-container {
+        background: url(../img/bg-featuredArea.jpg) repeat 0 0;
+        width: 360px;
+        height: 300px;
+        margin-bottom: 15px;
+      }
+      .promo-container {
+        background: @drkGray;
+        width: 360px;
+        height: 225px;
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

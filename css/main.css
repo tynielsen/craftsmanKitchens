@@ -315,3 +315,134 @@ sup {
 .content .row-2 .tab-content.tab-4-content {
   display: none;
 }
+.content .row-3 h3 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  float: left;
+  margin-bottom: 20px;
+}
+.content .row-3 .first-column {
+  width: 584px;
+  float: left;
+}
+.content .row-3 .first-column .pagination {
+  float: right;
+  margin-bottom: 20px;
+}
+.content .row-3 .first-column .pagination ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.content .row-3 .first-column .pagination ul li {
+  float: left;
+  margin-left: 10px;
+}
+.content .row-3 .first-column .pagination ul li:first-child {
+  margin-left: 0;
+}
+.content .row-3 .first-column .pagination ul li a {
+  background: url(../img/sprite-bullet-1.png) no-repeat 0 -14px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.content .row-3 .first-column .pagination ul li a.current {
+  background-position: 0 0;
+}
+.content .row-3 .first-column .pagination .btn-viewAllNews {
+  display: inline-block;
+  color: #00bdff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 11px;
+  vertical-align: top;
+}
+.content .row-3 .first-column .latest-news-container ul li {
+  background: url(../img/bg-latestNews.png) no-repeat 0 0;
+  width: 584px;
+  height: 169px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5f5555;
+  margin-bottom: 20px;
+}
+.content .row-3 .first-column .latest-news-container ul li img {
+  display: block;
+  float: left;
+  margin-right: 35px;
+  width: 210px;
+}
+.content .row-3 .first-column .latest-news-container ul li h5 {
+  width: 315px;
+  float: left;
+  text-transform: uppercase;
+  font-style: oblique;
+  padding-top: 40px;
+  margin-bottom: 15px;
+}
+.content .row-3 .first-column .latest-news-container ul li p {
+  width: 315px;
+  float: left;
+  margin-bottom: 15px;
+}
+.content .row-3 .first-column .latest-news-container ul li a.btn-readMore {
+  color: #000000;
+  font-weight: 700;
+  line-height: 12px;
+  border-bottom: 2px solid #afa8a6;
+  float: left;
+}
+.content .row-3 .second-column {
+  width: 365px;
+  float: right;
+}
+.content .row-3 .second-column h3 {
+  float: none;
+}
+.content .row-3 .second-column ul li {
+  border-top: 1px solid #f0edec;
+}
+.content .row-3 .second-column ul li.contact-info {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+.content .row-3 .second-column ul li.contact-info div p {
+  margin-bottom: 5px;
+}
+.content .row-3 .second-column ul li.contact-info .address {
+  float: left;
+  margin-right: 75px;
+}
+.content .row-3 .second-column ul li.contact-info .digits {
+  float: left;
+}
+.content .row-3 .second-column ul li.facebook {
+  padding-top: 20px;
+  margin-bottom: 70px;
+}
+.content .row-3 .second-column ul li.facebook p {
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.content .row-3 .second-column ul li.facebook p img {
+  vertical-align: bottom;
+  height: 16px;
+}
+.content .row-3 .second-column .featured-container {
+  background: url(../img/bg-featuredArea.jpg) repeat 0 0;
+  width: 360px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.content .row-3 .second-column .promo-container {
+  background: #2f2a2a;
+  width: 360px;
+  height: 225px;
+}
