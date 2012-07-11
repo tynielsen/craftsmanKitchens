@@ -34,7 +34,7 @@ $(function() {
   // only run auto scrolling if there's more than one image
   if(items > 1) {
     // automatically scroll
-    var startInterval = function() { 
+    var startInterval = function() {
     var items = [];
     var currentItem = 0;
 
@@ -51,7 +51,7 @@ $(function() {
         });
 
         currentItem++;
-        if(currentItem >= items.length) { 
+        if(currentItem >= items.length) {
           currentItem = 0;
         }
       }, 8000);

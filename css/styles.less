@@ -31,6 +31,7 @@
 @ltGray: #f0edec;
 @medGray: #AFA8A6;
 @gray: #5f5555;
+@gray2: #6b6666;
 @drkGray: #2f2a2a;
 @white: #ffffff;
 @black: #000000;
@@ -88,6 +89,7 @@ h2 {
 h3 {
 }
 p {
+  line-height: 1.8;
 }
 
 /*******************************************
@@ -133,6 +135,7 @@ form {
   li {
     float: left;
     margin-left: 40px;
+    position: relative;
     &:first-child { margin-left: 0; }
     a {
       background: url(../img/sprite-navbar.png) no-repeat;
@@ -169,6 +172,88 @@ form {
       background-position: -503px 0;
       width: 74px;
       &:hover { background-position: -503px -14px; }
+    }
+    .current-page-arrow {
+      background: url(../img/arrow-current.png) no-repeat 0 0;
+      display: none;
+      width: 18px;
+      height: 9px;
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      margin-left: -9px;
+    }
+    &.current {
+      .current-page-arrow {
+        display: block;
+      }
+    }
+  }
+}
+
+/**********************************************
+
+  @Section: Secondary Pages Generic Content
+
+**********************************************/
+.secondary-page {
+  .header {
+    border-bottom: 1px solid @ltGray;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .secondary-navbar {
+    border-bottom: 1px solid @ltGray;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+    ul {
+      li {
+        float: left;
+        margin-left: 65px;
+        margin-bottom: 9px;
+        position: relative;
+        &:first-child {
+          margin-left: 0;
+        }
+        &.secondary-nav-1 {
+          a {
+
+          }
+        }
+        &.secondary-nav-2 {
+          a {
+
+          }
+        }
+        .current-page-arrow {
+          background: url(../img/arrow-current.png) no-repeat 0 0;
+          display: none;
+          width: 18px;
+          height: 9px;
+          position: absolute;
+          bottom: -20px;
+          left: 50%;
+          margin-left: -9px;
+        }
+        &.current {
+          a {
+            color: @medGray;
+          }
+          .current-page-arrow {
+            display: block;
+          }
+        }
+        a {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
     }
   }
 }
@@ -471,6 +556,8 @@ form {
               text-transform: uppercase;
               img {
                 vertical-align: bottom;
+                vertical-align: top 
+
                 height: 16px;
               }
             }
@@ -492,8 +579,48 @@ form {
   }
 }
 
+/*******************************************
 
+  @Section: About Us Page Content
 
+*******************************************/
+
+.content {
+  .row-1 {
+
+  }
+  .row-2 {
+    .subcolumn-1 {
+      width: 550px;
+      float: left;
+      p {
+        width: 550px;
+        margin-bottom: 30px;
+        color: @gray2;
+      }
+    }
+    .subcolumn-2 {
+      width: 425px;
+      float: right;
+      .link-viewOurProjects-container {
+        background: url(../img/bg-featuredArea-2.jpg) repeat center 0;
+        width: 425px;
+        height: 22px;
+        padding: 50px 0;
+        .link-viewOurProjects {
+          background: url(../img/bullet-arrow-blue.png) no-repeat 0 center;
+          padding-left: 15px;
+          color: #00BDFF;
+          text-transform: uppercase;
+          font-size: 22px;
+          width: 240px;
+          margin: auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 
 

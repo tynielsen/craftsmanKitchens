@@ -71,6 +71,9 @@ sup {
   font-size: 60%;
   vertical-align: top;
 }
+p {
+  line-height: 1.8;
+}
 /*******************************************
 
   @Section: Forms
@@ -107,6 +110,7 @@ sup {
 .nav li {
   float: left;
   margin-left: 40px;
+  position: relative;
 }
 .nav li:first-child {
   margin-left: 0;
@@ -158,6 +162,69 @@ sup {
 }
 .nav li.nav-6 a:hover {
   background-position: -503px -14px;
+}
+.nav li .current-page-arrow {
+  background: url(../img/arrow-current.png) no-repeat 0 0;
+  display: none;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -9px;
+}
+.nav li.current .current-page-arrow {
+  display: block;
+}
+/**********************************************
+
+  @Section: Secondary Pages Generic Content
+
+**********************************************/
+.secondary-page .header {
+  border-bottom: 1px solid #f0edec;
+  margin-bottom: 30px;
+}
+.secondary-page h1 {
+  font-size: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.secondary-page .secondary-navbar {
+  border-bottom: 1px solid #f0edec;
+  margin-bottom: 40px;
+  padding-bottom: 1px;
+}
+.secondary-page .secondary-navbar ul li {
+  float: left;
+  margin-left: 65px;
+  margin-bottom: 9px;
+  position: relative;
+}
+.secondary-page .secondary-navbar ul li:first-child {
+  margin-left: 0;
+}
+.secondary-page .secondary-navbar ul li .current-page-arrow {
+  background: url(../img/arrow-current.png) no-repeat 0 0;
+  display: none;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -9px;
+}
+.secondary-page .secondary-navbar ul li.current a {
+  color: #afa8a6;
+}
+.secondary-page .secondary-navbar ul li.current .current-page-arrow {
+  display: block;
+}
+.secondary-page .secondary-navbar ul li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
 }
 /*******************************************
 
@@ -433,7 +500,9 @@ sup {
 }
 .content .row-3 .second-column ul li.facebook p img {
   vertical-align: bottom;
-  height: 16px;
+  vertical-align: top 
+
+                height: 16px;
 }
 .content .row-3 .second-column .featured-container {
   background: url(../img/bg-featuredArea.jpg) repeat 0 0;
@@ -445,4 +514,38 @@ sup {
   background: #2f2a2a;
   width: 360px;
   height: 225px;
+}
+/*******************************************
+
+  @Section: About Us Page Content
+
+*******************************************/
+.content .row-2 .subcolumn-1 {
+  width: 550px;
+  float: left;
+}
+.content .row-2 .subcolumn-1 p {
+  width: 550px;
+  margin-bottom: 30px;
+  color: #6b6666;
+}
+.content .row-2 .subcolumn-2 {
+  width: 425px;
+  float: right;
+}
+.content .row-2 .subcolumn-2 .link-viewOurProjects-container {
+  background: url(../img/bg-featuredArea-2.jpg) repeat center 0;
+  width: 425px;
+  height: 22px;
+  padding: 50px 0;
+}
+.content .row-2 .subcolumn-2 .link-viewOurProjects-container .link-viewOurProjects {
+  background: url(../img/bullet-arrow-blue.png) no-repeat 0 center;
+  padding-left: 15px;
+  color: #00BDFF;
+  text-transform: uppercase;
+  font-size: 22px;
+  width: 240px;
+  margin: auto;
+  display: block;
 }
