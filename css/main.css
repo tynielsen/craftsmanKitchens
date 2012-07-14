@@ -90,7 +90,7 @@ p {
   position: relative;
   padding: 60px 0 0;
 }
-.header a.logo {
+.header .logo {
   background: url(../img/logo.png) no-repeat;
   text-indent: -9999px;
   display: block;
@@ -243,6 +243,7 @@ p {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
+  cursor: pointer;
 }
 /*******************************************
 
@@ -567,9 +568,52 @@ p {
   margin: auto;
   display: block;
 }
+.content .why-choose-craftsman {
+  display: none;
+}
+.content .why-choose-craftsman .opening-p {
+  font-size: 30px;
+  font-weight: 100;
+  border-bottom: 1px solid #f0edec;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+}
+.content .why-choose-craftsman div {
+  width: 380px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 0 70px;
+  margin: 0 1px 80px 0;
+}
+.content .why-choose-craftsman div h5 {
+  padding-top: 60px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.content .why-choose-craftsman div h5.reputation {
+  background: url(../img/icon-reputation.png) no-repeat center 0;
+}
+.content .why-choose-craftsman div h5.dedication {
+  background: url(../img/icon-dedication.png) no-repeat center 0;
+}
+.content .why-choose-craftsman div h5.unsurpassed-quality {
+  background: url(../img/icon-unsurpassedQuality.png) no-repeat center 0;
+}
+.content .why-choose-craftsman div h5.professionalism {
+  background: url(../img/icon-professionalism.png) no-repeat center 0;
+}
+.content .why-choose-craftsman div h5.budget-options {
+  background: url(../img/icon-budgetOptions.png) no-repeat center 0;
+}
+.content .why-choose-craftsman div p {
+  font-size: 13px;
+}
 /*******************************************
 
-  @Section: About Us Page Content
+  @Section: Gallery Page Content
 
 *******************************************/
 .gallery-instructions {
@@ -593,4 +637,44 @@ p {
 }
 .gallery-thumbnails li a img {
   display: block;
+}
+/*******************************************
+
+  @Section: Case Studies Page Content
+
+*******************************************/
+.case-studies li {
+  width: 510px;
+  float: left;
+  margin: 0 0 75px 26px;
+}
+.case-studies li:nth-child(2n + 1) {
+  margin: 0 0 75px 0;
+}
+.case-studies li img {
+  max-width: 504px;
+  display: block;
+  border: 3px solid #f0edec;
+  margin-bottom: 40px;
+}
+.case-studies li h5,
+.case-studies li p,
+.case-studies li .btn-viewCaseStudy {
+  margin-left: 3px;
+}
+.case-studies li h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.case-studies li p {
+  margin-bottom: 40px;
+}
+.case-studies li .btn-viewCaseStudy {
+  background: url(../img/btn-viewCaseStudy.jpg) no-repeat 0 0;
+  display: block;
+  width: 150px;
+  height: 23px;
+  text-indent: -9999px;
 }

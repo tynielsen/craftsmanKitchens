@@ -1,5 +1,34 @@
 $(function() {
 
+  // hiding and showing the two areas of the about-us page
+  $('.secondary-nav-1 a').click(function() {
+    $('.secondary-nav-1').addClass('current');
+    $('.secondary-nav-2').removeClass('current');
+    $('.why-choose-craftsman').hide();
+    $('.our-story').show();
+  });
+  $('.secondary-nav-2 a').click(function() {
+    $('.secondary-nav-2').addClass('current');
+    $('.secondary-nav-1').removeClass('current');
+    $('.our-story').hide();
+    $('.why-choose-craftsman').show();
+  });
+
+  // adding the thanks for looking image to the end of the gallery thumbnails
+  var lastThumb = "<li class='gallery-last-thumbnail'><img src='img/gallery-last-thumbnail.jpg' title='Thanks For Taking The Time To Look' alt='Thanks For Taking The Time To Look'></li>";
+  $('.gallery-thumbnails').append(lastThumb);
+
+  // hiding and showing (fade) different tabs on home page
+  $('.row-2 ul li').click(function() {
+    //tab
+    $('.row-2 ul li').removeClass('current-tab');
+    $(this).addClass('current-tab');
+    //tab-content
+    $('.tab-content').fadeOut();
+    $('.' + $(this).attr('id') + '-content').fadeIn();
+  });
+
+
   // center the image carousel depending on window width without screwing up scrolling effect
   // probably not really necessary at this point, will probably end up being removed
   var checkWindowWidth = function() {
@@ -96,20 +125,6 @@ $(function() {
       });
     });
   }
-
-  // hiding and showing (fade) different tabs on home page
-	$('.row-2 ul li').click(function() {
-    //tab
-    $('.row-2 ul li').removeClass('current-tab');
-    $(this).addClass('current-tab');
-    //tab-content
-    $('.tab-content').fadeOut();
-    $('.' + $(this).attr('id') + '-content').fadeIn();
-  });
-
-  // adding the thanks for looking image to the end of the gallery thumbnails
-  var lastThumb = "<li class='gallery-last-thumbnail'><img src='img/gallery-last-thumbnail.jpg' title='Thanks For Taking The Time To Look' alt='Thanks For Taking The Time To Look'></li>";
-  $('.gallery-thumbnails').append(lastThumb);
 
 });
 
