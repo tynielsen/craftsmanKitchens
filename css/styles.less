@@ -143,35 +143,53 @@ form {
       text-indent: -9999px;
       height: 10px;
     }
-    &.nav-1 a {
-      background-position: 0 0;
-      width: 79px;
-      &:hover { background-position: 0 -14px;}
+    &.nav-1 {
+      a {
+        background-position: 0 0;
+        width: 79px;
+        &:hover { background-position: 0 -14px; }
+      }
+      &.current a { background-position: 0 -14px; }
     }
-    &.nav-2 a {
-      background-position: -117px 0;
-      width: 75px;
-      &:hover { background-position: -117px -14px; }
+    &.nav-2 {
+      a {
+        background-position: -117px 0;
+        width: 75px;
+        &:hover { background-position: -117px -14px; }
+      }
+      &.current a { background-position: -117px -14px; }
     }
-    &.nav-3 a {
-      background-position: -231px 0;
-      width: 47px;
-      &:hover { background-position: -231px -14px; }
+    &.nav-3 {
+      a {
+        background-position: -231px 0;
+        width: 47px;
+        &:hover { background-position: -231px -14px; }
+      }
+      &.current a { background-position: -231px -14px; }
     }
-    &.nav-4 a {
-      background-position: -315px 0;
-      width: 58px;
-      &:hover { background-position: -315px -14px; }
+    &.nav-4 {
+      a {
+        background-position: -315px 0;
+        width: 58px;
+        &:hover { background-position: -315px -14px; }
+      }
+      &.current a { background-position: -315px -14px; }
     }
-    &.nav-5 a {
-      background-position: -411px 0;
-      width: 53px;
-      &:hover { background-position: -411px -14px; }
+    &.nav-5 {
+      a {
+        background-position: -411px 0;
+        width: 53px;
+        &:hover { background-position: -411px -14px; }
+      }
+      &.current a { background-position: -411px -14px; }
     }
-    &.nav-6 a {
-      background-position: -503px 0;
-      width: 74px;
-      &:hover { background-position: -503px -14px; }
+    &.nav-6 {
+      a {
+        background-position: -503px 0;
+        width: 74px;
+        &:hover { background-position: -503px -14px; }
+      }
+      &.current a { background-position: -503px -14px; }
     }
     .current-page-arrow {
       background: url(../img/arrow-current.png) no-repeat 0 0;
@@ -617,6 +635,36 @@ form {
           margin: auto;
           display: block;
         }
+      }
+    }
+  }
+}
+
+/*******************************************
+
+  @Section: About Us Page Content
+
+*******************************************/
+.gallery-instructions {
+  margin-bottom: 30px;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.gallery-thumbnails {
+  li {
+    float: left;
+    width: 340px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+    a {
+      display: block;
+      background: @ltGray;
+      padding: 3px;
+      img {
+        display: block;
       }
     }
   }

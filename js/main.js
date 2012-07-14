@@ -97,7 +97,7 @@ $(function() {
     });
   }
 
-  //hiding and showing (fade) different tabs on home page
+  // hiding and showing (fade) different tabs on home page
 	$('.row-2 ul li').click(function() {
     //tab
     $('.row-2 ul li').removeClass('current-tab');
@@ -107,4 +107,12 @@ $(function() {
     $('.' + $(this).attr('id') + '-content').fadeIn();
   });
 
+  // adding the thanks for looking image to the end of the gallery thumbnails
+  var lastThumb = "<li class='gallery-last-thumbnail'><img src='img/gallery-last-thumbnail.jpg' title='Thanks For Taking The Time To Look' alt='Thanks For Taking The Time To Look'></li>";
+  $('.gallery-thumbnails').append(lastThumb);
+
 });
+
+
+
+

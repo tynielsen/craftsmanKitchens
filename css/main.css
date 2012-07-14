@@ -128,11 +128,17 @@ p {
 .nav li.nav-1 a:hover {
   background-position: 0 -14px;
 }
+.nav li.nav-1.current a {
+  background-position: 0 -14px;
+}
 .nav li.nav-2 a {
   background-position: -117px 0;
   width: 75px;
 }
 .nav li.nav-2 a:hover {
+  background-position: -117px -14px;
+}
+.nav li.nav-2.current a {
   background-position: -117px -14px;
 }
 .nav li.nav-3 a {
@@ -142,11 +148,17 @@ p {
 .nav li.nav-3 a:hover {
   background-position: -231px -14px;
 }
+.nav li.nav-3.current a {
+  background-position: -231px -14px;
+}
 .nav li.nav-4 a {
   background-position: -315px 0;
   width: 58px;
 }
 .nav li.nav-4 a:hover {
+  background-position: -315px -14px;
+}
+.nav li.nav-4.current a {
   background-position: -315px -14px;
 }
 .nav li.nav-5 a {
@@ -156,11 +168,17 @@ p {
 .nav li.nav-5 a:hover {
   background-position: -411px -14px;
 }
+.nav li.nav-5.current a {
+  background-position: -411px -14px;
+}
 .nav li.nav-6 a {
   background-position: -503px 0;
   width: 74px;
 }
 .nav li.nav-6 a:hover {
+  background-position: -503px -14px;
+}
+.nav li.nav-6.current a {
   background-position: -503px -14px;
 }
 .nav li .current-page-arrow {
@@ -547,5 +565,32 @@ p {
   font-size: 22px;
   width: 240px;
   margin: auto;
+  display: block;
+}
+/*******************************************
+
+  @Section: About Us Page Content
+
+*******************************************/
+.gallery-instructions {
+  margin-bottom: 30px;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.gallery-thumbnails li {
+  float: left;
+  width: 340px;
+  margin-left: 14px;
+  margin-bottom: 15px;
+}
+.gallery-thumbnails li:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.gallery-thumbnails li a {
+  display: block;
+  background: #f0edec;
+  padding: 3px;
+}
+.gallery-thumbnails li a img {
   display: block;
 }
